@@ -1,4 +1,4 @@
-# Laravel 9 允許定義電子郵件網域子集並使用自訂規則驗證
+# Laravel 10 允許定義電子郵件網域子集並使用自訂規則驗證
 
 引入 maize-tech 的 laravel-email-domain-rule 套件來擴增允許定義電子郵件網域子集並使用自訂規則驗證，只允許指定的電子郵件網域或來進行受理。
 
@@ -16,15 +16,19 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
-- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移，並執行資料庫填充（如果要測試的話）。
 ```sh
-$ php artisan migrate
+$ php artisan migrate --seed
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
+- 註冊後，可以經由 `/login` 來進行登入。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/RTiARrZ.png)
+![](https://i.imgur.com/OBAxRPg.png)
 > 允許特定電子郵件網域的使用者註冊
+
+![](https://i.imgur.com/jh0chgm.png)
+> 允許更新電子郵件地址成特定電子郵件網域
