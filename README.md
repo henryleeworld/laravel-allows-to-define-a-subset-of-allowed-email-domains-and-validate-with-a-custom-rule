@@ -27,8 +27,8 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/OBAxRPg.png)
+![](https://i.imgur.com/n43CFAV.png)
 > 允許特定電子郵件網域的使用者註冊
 
-![](https://i.imgur.com/jh0chgm.png)
+![](https://i.imgur.com/e4uheQd.png)
 > 允許更新電子郵件地址成特定電子郵件網域
